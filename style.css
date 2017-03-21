@@ -1,0 +1,15 @@
+.vox {
+  width: 300px;
+  background: url(images/play.png) no-repeat;
+  background-position: center;
+}
+ .vox a:link img {
+   opacity: 1;
+ }
+.vox a:hover img {
+  opacity: 0.5;
+}
+
+img {
+  max-width: 100%;
+}
