@@ -1,22 +1,22 @@
 
-var olympia = document.getElementById('olympia');
-var fallencity = document.getElementById('fallencity');
+  var olympia = document.getElementById('olympia');
+  var fallencity = document.getElementById('fallencity');
 
+  // function playOlympia() {
+  //   olympia.play();
+  // }
+  // 
+  // function pauseOlympia() {
+  //   olympia.pause();
+  // }
 
-function playOlympia() {
-  olympia.play();
+function toggleOlympia() {
   fallencity.pause();
+  return olympia.paused ? olympia.play() : olympia.pause();
 }
 
-function pauseOlympia() {
+
+function toggleFallencity() {
   olympia.pause();
-}
-
-function playFallencity() {
-  fallencity.play();
-  olympia.pause();
-}
-
-function pauseFallencity() {
-  fallencity.pause();
+  return fallencity.paused ? fallencity.play() : fallencity.pause();
 }
