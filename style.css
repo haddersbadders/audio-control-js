@@ -1,15 +1,25 @@
+/* creates a box for the video to sit in.*/
 .vox {
-  width: 300px;
-  background: url(images/play.png) no-repeat;
+  width: 300px; /* sets the size to 300px square*/
+  height: 300px;
+  border-radius: 50%; /* rounds corners off to make it a circle*/
+  overflow: hidden; /* Prevents the video being shown outside of the video */
+  background: url(images/play.png) no-repeat; /* Adds a play icon to the video*/
   background-position: center;
 }
- .vox a:link img {
+
+/* Creates the hover effects */
+.vox:link video {
    opacity: 1;
  }
-.vox a:hover img {
+.vox:hover video {
   opacity: 0.5;
+  cursor: pointer;
 }
 
-img {
-  max-width: 100%;
+/* positions the video inside the .vox DIV, use left and top to nudge the video */
+.vox video {
+  height: 300px;
+  position: relative;
+  left: -66px;
 }

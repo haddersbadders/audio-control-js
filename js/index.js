@@ -1,22 +1,16 @@
+// These two lines create variables and fetch the videos from the HTML. Add more to fetch more videos
+  var catfish = document.getElementById('catfish');
+  var dance = document.getElementById('dance');
 
-  var olympia = document.getElementById('olympia');
-  var fallencity = document.getElementById('fallencity');
+// Create functions (actions) to attach to each video on click
 
-  // function playOlympia() {
-  //   olympia.play();
-  // }
-  // 
-  // function pauseOlympia() {
-  //   olympia.pause();
-  // }
-
-function toggleOlympia() {
-  fallencity.pause();
-  return olympia.paused ? olympia.play() : olympia.pause();
+function toggleCatfish() {
+  dance.pause();
+  return catfish.paused ? catfish.play() : catfish.pause();
 }
 
 
-function toggleFallencity() {
-  olympia.pause();
-  return fallencity.paused ? fallencity.play() : fallencity.pause();
+function toggleDance() {
+  catfish.pause();
+  return dance.paused ? dance.play() : dance.pause();
 }
